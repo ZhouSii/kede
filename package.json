@@ -1,0 +1,36 @@
+{
+  "name": "kede",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhouSii/kede.git"
+  },
+  "keywords": [
+    "kede"
+  ],
+  "author": "charlie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhouSii/kede/issues"
+  },
+  "homepage": "https://github.com/ZhouSii/kede#readme"
+}
