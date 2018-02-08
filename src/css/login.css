@@ -1,0 +1,244 @@
+body {
+  font-size: 12px;
+  background: #F0F0F0;
+}
+
+#header {
+  height: 143px;
+  padding-top: 52px;
+  padding-bottom: 34px;
+  padding-left: 200px;
+}
+
+#header .hearder_content {
+  padding: 0;
+  height: 52px;
+}
+
+#header .hearder_content .tb {
+  width: 196px;
+  display: block;
+  padding: 0;
+}
+
+#header .hearder_content h2 {
+  line-height: 82px;
+  margin-left: 20px;
+  color: #666;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#header .hearder_content .header_text {
+  width: 510px;
+  height: 52px;
+  line-height: 20px;
+  margin-left: 462px;
+  padding: 5px 10px;
+  background: #fdf7e9;
+  border: 1px solid #edae1b;
+  color: #666;
+}
+
+#main {
+  background: #f11a0c;
+  position: relative;
+  width: auto;
+  height: 480px;
+  margin: 0 auto;
+}
+
+#main .main_bg {
+  width: 998px;
+  height: 480px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#main .main_bg .login_right {
+  width: 340px;
+  height: 360px;
+  font-size: 20px;
+  position: absolute;
+  margin: 0 auto;
+  clear: right;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 10000;
+  right: 0;
+  top: 60px;
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+#main .main_bg .login_right .lr_tit {
+  width: 100%;
+  height: 61px;
+  padding: 18px 0 18px 0;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  color: #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#main .main_bg .login_right .lr_tit .active {
+  color: #89b929 !important;
+}
+
+#main .main_bg .login_right .lr_tit a {
+  margin: 0 40px;
+  cursor: pointer;
+  color: #666666;
+}
+
+#main .main_bg .login_right .zhanghao {
+  width: 340px;
+  height: 200px;
+}
+
+#main .main_bg .login_right .zhanghao .form {
+  width: 280px;
+  margin: 0 auto;
+}
+
+#main .main_bg .login_right .zhanghao .form .rusername {
+  padding-top: 34px;
+}
+
+#main .main_bg .login_right .zhanghao .form .rusername span {
+  background-position: -324px -72px;
+}
+
+#main .main_bg .login_right .zhanghao .form p {
+  position: relative;
+  height: 38px;
+}
+
+#main .main_bg .login_right .zhanghao .form p input {
+  outline: none;
+  width: 280px;
+  padding-left: 48px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #bdbdbd;
+  color: #666;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+#main .main_bg .login_right .zhanghao .form p b {
+  position: absolute;
+  top: 11px;
+  left: 38px;
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #b7b5b5;
+}
+
+#main .main_bg .login_right .zhanghao .form p span {
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  top: 2px;
+  left: 2px;
+  background: url("img/script.fw.png") no-repeat;
+}
+
+#main .main_bg .login_right .zhanghao .form .rpwd {
+  padding-top: 10px;
+}
+
+#main .main_bg .login_right .zhanghao .form .rpwd span {
+  background-position: -324px -112px;
+}
+
+#main .main_bg .login_right .zhanghao .form .remember {
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+#main .main_bg .login_right .zhanghao .form .remember a {
+  float: right;
+  color: #ff6600;
+  font-size: 13px;
+}
+
+#main .main_bg .login_right .zhanghao .form .rsbmit {
+  margin-top: 16px;
+}
+
+#main .main_bg .login_right .zhanghao .form .rsbmit .btn {
+  cursor: pointer;
+  background: #f60;
+  width: 280px;
+  height: 40px;
+  letter-spacing: 34px;
+  padding-left: 35px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 400;
+  border: 0;
+  outline: none;
+}
+
+#main .main_bg .login_right .zhanghao .form .rsbmit .btn:hover {
+  background-color: #f80;
+}
+
+#main .main_bg .login_right .l_botton {
+  height: 60px;
+  padding: 0 20px;
+  background-color: #ebebf1;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+#main .main_bg .login_right .l_botton a:hover {
+  opacity: 0.5;
+}
+
+#main .main_bg .login_right .l_botton .weixin, #main .main_bg .login_right .l_botton .qq, #main .main_bg .login_right .l_botton .weibo, #main .main_bg .login_right .l_botton .zhifubao {
+  width: 32px;
+  height: 32px;
+  display: block;
+  float: left;
+  background: #ebebf1 url("img/script.fw.png") no-repeat;
+  margin: 14px 8px 0 0;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+#main .main_bg .login_right .l_botton .weixin {
+  background-position: -398px -54px;
+}
+
+#main .main_bg .login_right .l_botton .qq {
+  background-position: -402px -106px;
+}
+
+#main .main_bg .login_right .l_botton .weibo {
+  background-position: -459px -54px;
+}
+
+#main .main_bg .login_right .l_botton .zhifubao {
+  background-position: -462px -106px;
+}
+
+#main .main_bg .login_right .l_botton .toReg {
+  line-height: 60px;
+  color: #f60;
+}
+
+#main .main_bg .login_right .l_botton .toReg a {
+  color: #f60;
+  font-size: 14px;
+}

@@ -34,6 +34,10 @@ gulp.task('jtSass',function(){
 	gulp.watch('./src/sass/*.scss',['compileSass'])
 });
 
+gulp.task('jtSass',function(){
+	// 当文件有修改，则执行complieSass任务
+	gulp.watch('./src/sass/*.scss',['compileSass'])
+});
 
 // 合并压缩js文件
 var concat = require('gulp-concat');
@@ -67,17 +71,17 @@ var browserSync = require('browser-sync');
 gulp.task('server',function(){
 	// 启动一个自动刷新的服务器
 	browserSync({
-		//创建一个静态服务器
+		// 创建一个静态服务器
 		// server:'./src',
 
 		// 指定端口
-		port:1008,
+		port:11110,
 
 		// 代理服务器
 		// 用browserSync代理php服务器
 		// 	* 识别php
 		// 	* 自动刷新
-		proxy:'http://localhost:17080',
+		proxy:'http://localhost:1804',
 
 		// 监听文件修改
 		files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']

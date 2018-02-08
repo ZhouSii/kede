@@ -1,0 +1,206 @@
+#nav .container .nav_title:hover .category_info {
+  display: block;
+}
+
+#nav .container .nav_title .category_info {
+  display: none;
+}
+
+#banner {
+  margin-bottom: 20px;
+}
+
+#banner .top_ban {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#banner .top_ban .ul1 {
+  margin: 0 auto;
+  height: 500px;
+  width: 1920px;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  margin-left: -960px;
+}
+
+#banner .top_ban .ul1 li {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#banner .top_ban .ul1 .banner_page {
+  position: absolute;
+  bottom: 5px;
+  left: 45%;
+  z-index: 9999;
+}
+
+#banner .top_ban .ul1 .banner_page .active {
+  background: #94c51b;
+}
+
+#banner .top_ban .ul1 .banner_page span {
+  float: left;
+  width: 18px;
+  height: 18px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #333;
+  margin: 4px;
+  cursor: pointer;
+  color: #fff;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+#banner .top_ban .ul1 .ban_float {
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  opacity: 0.4;
+  z-index: 500;
+  width: 21px;
+  height: 47px;
+  font-size: 40px;
+  line-height: 40px;
+  background: url(http://pic.keede.com/Images/index_scb/20160511/play_button1.png) no-repeat -738px 0px;
+  display: none;
+}
+
+#banner .top_ban .ul1 .ban_float:hover {
+  opacity: 1;
+}
+
+#banner .top_ban .ul1 .banner_prev {
+  left: 350px;
+  top: 50%;
+  margin-top: -23px;
+  background-position: 0 0;
+}
+
+#banner .top_ban .ul1 .banner_next {
+  right: 350px;
+  top: 50%;
+  margin-top: -23px;
+}
+
+#main .container .tuijian {
+  height: 800px;
+}
+
+#main .container .tuijian ul li {
+  margin: 0px 20px 20px 0px;
+  float: left;
+  width: 383px;
+  height: 220px;
+  overflow: hidden;
+  background: #fc82b3;
+}
+
+#main .container .tuijian ul li a {
+  display: block;
+}
+
+#main .container .tuijian ul li:hover {
+  opacity: 0.7;
+}
+
+#main .container .tuijian ul li:nth-child(3) {
+  margin-right: 0;
+}
+
+#main .container .tuijian ul li:nth-child(6) {
+  margin-right: 0;
+}
+
+#main .container .tuijian ul li:nth-child(9) {
+  margin-right: 0;
+}
+
+#main .container .content1 a {
+  color: #666;
+}
+
+#main .container .content1 .c1_top {
+  position: relative;
+  background: url(http://pic.keede.com/Images/2015meitong/20150721/banner1.png) no-repeat;
+  height: 120px;
+  margin: 20px 0;
+}
+
+#main .container .content1 .c1_list {
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+#main .container .content1 .c1_list ul {
+  width: 1200px;
+  margin-bottom: 20px;
+}
+
+#main .container .content1 .c1_list ul li {
+  font-size: 12px;
+  background: #fff;
+  float: left;
+  width: 290px;
+  margin: 50px 10px 0px 0px;
+  display: list-item;
+  text-align: center;
+  list-style: none;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+#main .container .content1 .c1_list ul li:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 8px;
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+}
+
+#main .container .content1 .c1_list ul li img {
+  margin-bottom: 7px;
+}
+
+#main .container .content1 .c1_list ul li span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FC82B3;
+}
+
+#main .container .content1 .c1_list ul li b {
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: -2px;
+  font-weight: 100;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+#main .container .content1 .c1_list #c1_page {
+  padding-top: 20px;
+}
+
+#main .container .content1 .c1_list #c1_page span {
+  display: inline-block;
+  margin: 5px;
+  width: 40px;
+  line-height: 1.8;
+  text-align: center;
+  background-color: #dfdfdf;
+  color: #666;
+}
+
+#main .container .content1 .c1_list #c1_page .pgactive {
+  background-color: #fc0;
+  color: #fff;
+}

@@ -1,0 +1,214 @@
+body{
+    font-size:12px;
+    background:#F0F0F0;
+}
+#header{
+    height:143px;
+    padding-top:52px;
+    padding-bottom:34px;
+    padding-left:200px;
+    .hearder_content{
+        padding:0;
+        height:52px;
+        .tb{
+            width: 196px;
+            display: block;
+            padding:0;
+        }
+        h2{
+            line-height:82px;
+            margin-left:20px;
+            color:#666;
+            font-size:18px;
+            font-weight:100;
+
+        }
+        .header_text{
+            width: 510px;
+            height:52px;
+            line-height:20px;
+            margin-left:462px;
+            padding:5px 10px;
+            background:#fdf7e9;
+            border:1px solid #edae1b;
+            color:#666;
+        }
+    }
+}
+#main{
+    background: #f11a0c;
+    position:relative;
+    width:auto;
+    height: 480px;
+    margin:0 auto;
+    .main_bg{
+        width: 998px;
+        height:480px;
+        margin:auto;
+        position:absolute;
+        top:0;
+        right:0;
+        left:0;
+        .login_right{
+            width: 340px;
+            height:360px;
+            font-size:20px;
+            position:absolute;
+            margin:0 auto;
+            clear:right;
+            border-radius:3px;
+            overflow:hidden;
+            z-index:10000;
+            right:0;
+            top:60px;
+            background: rgba(255,255,255,0.9) !important;
+            .lr_tit{
+                width: 100%;
+                height: 61px;
+                padding: 18px 0 18px 0;
+                font-size: 20px;
+                color: #666;
+                text-align: center;
+                color: #e6e6e6;
+                border-bottom: 1px solid #e6e6e6;
+                .active{
+                    color: #89b929 !important;
+                }
+                a{
+                    margin: 0 40px;
+                    cursor: pointer;
+                    color: #666666;
+                }
+            }
+            .zhanghao{
+                width: 340px;
+                height: 200px;
+                .form{
+                    width: 280px;
+                    margin: 0 auto;
+                    .rusername{
+                        padding-top: 34px;
+                        span{
+                            background-position: -324px -72px;
+                        }
+                        
+                    }
+                    p{
+                        position: relative;
+                        height: 38px;
+                        input{
+                            
+                            outline: none;
+                            width: 280px;
+                            padding-left: 48px;
+                            height: 36px;
+                            line-height: 36px;
+                            border: 1px solid #bdbdbd;
+                            color: #666;
+                            font-size: 14px;
+                            background-color: #fff;
+                        }
+                        b{
+                            position: absolute;
+                            top: 11px;
+                            left: 38px;
+                            display: inline-block;
+                            width: 1px;
+                            height: 16px;
+                            background-color: #b7b5b5;
+                        }
+                        span{
+                            position: absolute;
+                            display: inline-block;
+                            width: 32px;
+                            height: 32px;
+                            top: 2px;
+                            left: 2px;
+                            background: url("img/script.fw.png") no-repeat;
+                        }
+                    }
+                    .rpwd{
+                        padding-top:10px;
+                        span{
+                            background-position: -324px -112px;
+                        }
+                    }
+                    .remember{
+                        height: 24px;
+                        line-height: 24px;
+                        font-size: 13px;
+                        a{
+                            float: right;
+                            color: #ff6600;
+                            font-size: 13px;
+                        }
+                    }
+                    .rsbmit{
+                        margin-top: 16px;
+                        .btn{
+                                cursor: pointer;
+                                background: #f60;
+                                width: 280px;
+                                height: 40px;
+                                letter-spacing: 34px;
+                                padding-left: 35px;
+                                font-size: 15px;
+                                color: #fff;
+                                border-radius: 3px;
+                                font-weight: 400;
+                                border: 0;
+                                outline: none;
+                                &:hover{
+                                    background-color: #f80;
+                                }
+                        }
+                    }
+                }
+            }
+            .l_botton{
+                height: 60px;
+                padding: 0 20px;
+                background-color: #ebebf1;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                a:hover{
+                    opacity: 0.5;
+                }
+                .weixin,.qq,.weibo,.zhifubao{
+                    width: 32px;
+                    height: 32px;
+                    display: block;
+                    float: left;
+                    background: #ebebf1 url("img/script.fw.png") no-repeat;
+                    margin: 14px 8px 0 0;
+                    cursor: pointer;
+                    border-radius: 18px;
+
+                }
+                .weixin{
+                    background-position:-398px -54px;
+                }
+                 .qq{
+                    background-position:-402px -106px;
+                }
+                .weibo{
+                    background-position:-459px -54px;
+                }
+                .zhifubao{
+                    background-position:-462px -106px;
+
+                }
+                .toReg{
+                    line-height: 60px;
+                    color: #f60;
+                    a{
+                        color: #f60;
+                        font-size: 14px
+                    }
+                }
+            }
+        }
+    }
+}
