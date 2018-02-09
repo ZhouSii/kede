@@ -74,6 +74,10 @@
   background-color: #fff;
 }
 
+#main .login_right .zhuce_new .zcul li .error {
+  border: 3px solid #f00;
+}
+
 #main .login_right .zhuce_new .zcul li i {
   position: absolute;
   display: inline-block;
@@ -84,6 +88,21 @@
   z-index: 100;
   top: 6px;
   left: 8px;
+}
+
+#main .login_right .zhuce_new .zcul li .randomnumber {
+  width: 100px;
+  height: 36px;
+  line-height: 34px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ccc;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  font-style: italic;
+  color: #666;
 }
 
 #main .login_right .zhuce_new .zcul li .mobile {

@@ -630,8 +630,23 @@ s, i, em {
   border-top: 1px solid #e8e8e8;
 }
 
+#pfright .pfright_4 .pf_weixin {
+  width: 196px;
+  height: 255px;
+  background: url("img/script.fw.png") no-repeat -140px -401px;
+  position: absolute;
+  top: -170px;
+  left: -200px;
+  display: none;
+  border-left: 1px solid #ccc;
+}
+
 #pfright .pfright_4:hover {
   background-position: -55px -583px;
+}
+
+#pfright .pfright_4:hover .pf_weixin {
+  display: block;
 }
 
 #pfright .pfright_2 {
@@ -646,8 +661,30 @@ s, i, em {
   background-position: 0 -522px;
 }
 
+#pfright .pfright_3 .pf_yanguang {
+  width: 196px;
+  height: 46px;
+  background: url("img/script.fw.png") no-repeat -140px -340px;
+  position: absolute;
+  top: 0px;
+  left: -200px;
+  padding-right: 8px;
+  display: none;
+}
+
+#pfright .pfright_3 .pf_yanguang .pf_line {
+  margin-top: 45px;
+  width: 188px;
+  height: 1px;
+  background: #ccc;
+}
+
 #pfright .pfright_3:hover {
   background-position: -55px -522px;
+}
+
+#pfright .pfright_3:hover .pf_yanguang {
+  display: block;
 }
 
 #pfright .pfright_5 {

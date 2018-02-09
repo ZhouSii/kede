@@ -132,7 +132,7 @@
   color: #FF6600;
   font-size: 20px;
   position: absolute;
-  left: 91px;
+  left: 90px;
   top: 12px;
 }
 
@@ -161,8 +161,23 @@
   display: block;
 }
 
+#main .container .main_content .shop_right .details_top_select .select_color a img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 #main .container .main_content .shop_right .details_top_select .select_color a:hover {
   border-color: #90c31f;
+}
+
+#main .container .main_content .shop_right .details_top_select #color {
+  width: 50px;
+  height: 30px;
+  margin-top: 48px;
+  font-size: 16px;
+  color: #666;
 }
 
 #main .container .main_content .shop_right .details_top_select .dts_msg {
@@ -221,6 +236,10 @@
   text-align: center;
   background-color: #eeeeee;
   margin-top: 0px;
+}
+
+#main .container .main_content .shop_right .details_top_select .dts_msg .details_select_luminosity .jian, #main .container .main_content .shop_right .details_top_select .dts_msg .details_select_luminosity .jia {
+  cursor: pointer;
 }
 
 #main .container .main_content .shop_right .details_top_select .dts_msg .details_select_luminosity .jia {
@@ -287,4 +306,83 @@
   position: absolute;
   left: 15px;
   top: 6px;
+}
+
+#int {
+  margin-top: 30px;
+}
+
+#int .int_l {
+  width: 210px;
+  width: 208px;
+  border: 1px solid #eee;
+  border-top: 3px solid #90c31f;
+  overflow: hidden;
+}
+
+#int .int_l .int_tree li {
+  padding-left: 25px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #D9D9D9;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+
+#int .int_l .int_tree li i {
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url("img/script.fw.png") no-repeat -120px -190px;
+  position: absolute;
+  left: 5px;
+  top: 9px;
+}
+
+#int .int_l .int_tree li a {
+  color: #6d9d03;
+  font-size: 14px;
+}
+
+#int .int_r {
+  width: 970px;
+}
+
+#int .int_r .detalis_tab {
+  width: 100%;
+  height: 35px;
+  background: #f7f7ff;
+}
+
+#int .int_r .detalis_tab .active {
+  border-top: 2px solid #ff6600;
+  color: #ff6600;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+#int .int_r .detalis_tab span {
+  background-color: #fff;
+  height: 35px;
+  font-size: 14px;
+  float: left;
+  padding: 0 25px 0 25px;
+  line-height: 33px;
+  border: 1px solid #dddddd;
+  margin-right: -1px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+#int .int_r .pcbox {
+  margin: 10px 0;
+  border: 1px solid #eeeeee;
+  border-top-width: 0px;
+}
+
+#int .int_r .pcbox img {
+  display: block;
 }

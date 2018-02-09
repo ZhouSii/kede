@@ -27,7 +27,6 @@
             width: 280px;
             margin: 15px auto;
             .zcul{
-
                 li{
                     position: relative;
                     height: 38px;
@@ -61,6 +60,9 @@
                         padding-left: 43px;
                         background-color: #fff;
                     }
+                    .error{
+                        border:3px solid #f00;
+                    }
                     i{
                         position:absolute;
                         display: inline-block;
@@ -72,6 +74,20 @@
                         top:6px;
                         left:8px;
 
+                    }
+                    .randomnumber{
+                        width: 100px;
+                        height:36px;
+                        line-height:34px;
+                        position:absolute;
+                        right:0;
+                        top:0;
+                        background:#ccc;
+                        text-align:center;
+                        font-size:14px;
+                        letter-spacing: 0.5em;
+                        font-style:italic;
+                        color:#666;
                     }
                     .mobile{
                         background-position:-330px -160px;

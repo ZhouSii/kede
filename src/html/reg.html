@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="../css/base.css" />
         <link rel="stylesheet" type="text/css" href="../css/reg.css" /> 
         <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+        <script src="../js/require.js" data-main="../js/reg"></script>
     </head>
     <body>
     <div id="load">
@@ -89,10 +91,11 @@
                             <li>
                                 <label class="icon"><i class="mobile"></i></label>
                                 <b></b>
-                                <input type="text" class="regusername" placeholder="请输入手机号"/>
+                                <input type="text" class="regusername" placeholder="请输入手机号" id="userphone" />
                             </li>
                             <li>
                                 <input type="text" class="validates" placeholder="请输入图形验证码"/>
+                                <span class="randomnumber"></span>
                             </li>
                             <li>
                                 <label class="icon"><i class="safe"></i></label>
@@ -102,7 +105,7 @@
                             <li>
                                 <label class="icon"><i class="lock"></i></label>
                                 <b></b>
-                                <input type="text" class="regpwd" placeholder="密码由6-15位字母、数字或字符组成"/>
+                                <input type="password" class="regpwd" placeholder="密码由6-15位字母、数字或字符组成" id="password" />
                             </li>
                         </ul> 
                         <div class="ect">请输入短信验证码</div>        

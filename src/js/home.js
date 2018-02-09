@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-03 18:26:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-07 09:22:08
+* @Last Modified time: 2018-02-08 10:54:57
 */
 
 require(['config'],function(){
@@ -10,6 +10,36 @@ require(['config'],function(){
     console.log(333);
     require(['jquery'],function($){
         // $('#headerbox').load('html/header.html');
+        // $('#footerbox').load('html/footer.html');
+        //返回顶部
+        var toTop = document.getElementById('toTop');
+            window.onscroll = function(){
+                var scrollTop = window.scrollY;
+                if(scrollTop>=600){
+                    toTop.style.display = 'block';
+                }else{
+                    toTop.style.display = 'none';
+                }
+            }
+        toTop.onclick = function(e){
+            e.preventDefault();
+        var timer = setInterval(function(){
+                     // 滚动过的距离越大，返回越快
+        var scrollTop = window.scrollY;
+
+                 // 计算速度
+             var speed = Math.floor(scrollTop/10);
+
+
+            if(scrollTop<=10 || speed === 0){
+                 clearInterval(timer);
+             }
+             window.scrollBy(0,-speed);
+            },60);
+        };
+
+
+        
         // $('#banner').hide();
         console.log(666);
         // banner块
@@ -152,6 +182,7 @@ require(['config'],function(){
         }
         xhr.open('get','../api/data/base.json');
         xhr.send();
+
     })
 
 });

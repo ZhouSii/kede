@@ -24,7 +24,6 @@
         }
     }
 }
-
 #main{
     .container{
         .main_content{
@@ -94,8 +93,6 @@
                         padding: 10px 0;
                     }
                 }
-
-                
                 .details_top_name{
                     border-bottom: 1px dotted #ccc;
                     padding-bottom: 10px;
@@ -115,13 +112,13 @@
                     line-height: 24px;
                     position:relative;
                     #price{
-                        width: 50px;
+                        width:50px;
                         line-height:24px;
                         background:#fff;
                         color: #FF6600;
                         font-size: 20px;
                         position:absolute;
-                        left:91px;
+                        left:90px;
                         top:12px;
                     }
                 }
@@ -145,10 +142,24 @@
                             border: 1px solid #ccc;
                             position: relative;
                             display: block;
+                            img{
+                                display:block;
+                                position:absolute;
+                                left:0;
+                                top:0;
+                            }
                             &:hover{
                                 border-color: #90c31f;
                             }
                         }
+
+                    }
+                    #color{
+                        width: 50px;
+                        height:30px;
+                        margin-top:48px;
+                        font-size:16px;
+                        color:#666;
                     }
                     .dts_msg{
                         height:65px;
@@ -197,6 +208,10 @@
                                 text-align: center;
                                 background-color: #eeeeee;
                                 margin-top: 0px;
+
+                            }
+                            .jian,.jia{
+                                cursor: pointer;
                             }
                             .jia{
                                 margin-left:0;
@@ -260,6 +275,76 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+#int{
+    margin-top:30px;
+    .int_l{
+        width: 210px;
+        width: 208px;
+        border: 1px solid #eee;
+        border-top: 3px solid #90c31f;
+        overflow: hidden;
+        .int_tree{
+            li{
+                padding-left: 25px;
+                height: 30px;
+                line-height: 30px;
+                border-bottom: 1px solid #D9D9D9;
+                background-color: #f5f5f5;
+                cursor: pointer;
+                white-space: nowrap;
+                position:relative;
+                i{
+                    display:block;
+                    width: 13px;
+                    height: 13px;
+                    background:url("img/script.fw.png") no-repeat -120px -190px;
+                    position:absolute;
+                    left:5px;
+                    top:9px;
+                }
+                a{
+                    color: #6d9d03;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .int_r{
+        width: 970px;
+        .detalis_tab{
+            width: 100%;
+            height: 35px;
+            background:#f7f7ff;
+            .active{
+                border-top: 2px solid #ff6600;
+                color: #ff6600;
+                line-height:32px;
+                font-weight: bold;
+            }
+            span{
+                background-color: #fff;
+                height: 35px;
+                font-size: 14px;
+                float: left;
+                padding: 0 25px 0 25px;
+                line-height: 33px;
+                border: 1px solid #dddddd;
+                margin-right: -1px;
+                display: block;
+                position: relative;
+                cursor: pointer;
+            }
+        }
+        .pcbox{
+            margin:10px 0 ;
+            border: 1px solid #eeeeee;
+            border-top-width: 0px;
+            img{
+                display:block;
             }
         }
     }

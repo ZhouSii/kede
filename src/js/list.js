@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-07 10:13:08
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-07 17:24:20
+* @Last Modified time: 2018-02-08 10:53:15
 */
 
 require(['config'],function(){
@@ -11,6 +11,32 @@ require(['config'],function(){
     require(['jquery'],function($){
         // $('#headerbox').load('html/header.html');
         // $('#banner').hide();
+         //返回顶部
+        var toTop = document.getElementById('toTop');
+            window.onscroll = function(){
+                var scrollTop = window.scrollY;
+                if(scrollTop>=600){
+                    toTop.style.display = 'block';
+                }else{
+                    toTop.style.display = 'none';
+                }
+            }
+        toTop.onclick = function(e){
+            e.preventDefault();
+        var timer = setInterval(function(){
+                     // 滚动过的距离越大，返回越快
+        var scrollTop = window.scrollY;
+
+                 // 计算速度
+             var speed = Math.floor(scrollTop/10);
+
+
+            if(scrollTop<=10 || speed === 0){
+                 clearInterval(timer);
+             }
+             window.scrollBy(0,-speed);
+            },60);
+        }
         console.log(666);
         // banner块
         var bans= document.querySelectorAll('#banner .ul1 li');

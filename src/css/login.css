@@ -112,6 +112,10 @@ body {
   background-position: -324px -72px;
 }
 
+#main .main_bg .login_right .zhanghao .form .rusername .error {
+  border: 3px solid #f00;
+}
+
 #main .main_bg .login_right .zhanghao .form p {
   position: relative;
   height: 38px;
