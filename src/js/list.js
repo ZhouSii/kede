@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-07 10:13:08
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-08 10:53:15
+* @Last Modified time: 2018-02-09 09:55:26
 */
 
 require(['config'],function(){
@@ -98,7 +98,6 @@ require(['config'],function(){
         }).on('mouseleave',function(){
             $('.ban_float').hide();
             clearInterval(time)
-           
             idx = (a=undefined? 0: a); 
             console.log(idx)
             move();
@@ -114,6 +113,7 @@ require(['config'],function(){
                     class:'t'
                 },
                 success:function(data){
+                    console.log(data)
                     $ul[0].innerHTML = data.map(function(item){
                         return `
                         <li data-id = ${item.id}>

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-03 18:26:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-08 10:54:57
+* @Last Modified time: 2018-02-09 15:54:51
 */
 
 require(['config'],function(){
@@ -61,7 +61,7 @@ require(['config'],function(){
                 if(idx==bans.length){
                     idx =0 ;
                 }
-                $(bans).eq(idx).fadeIn().siblings('li').fadeOut();
+                $(bans).eq(idx).stop().fadeIn().siblings('li').stop().fadeOut();
                 $(page).eq(idx).addClass('active').siblings().removeClass('active');
             },3000);
             
@@ -71,7 +71,7 @@ require(['config'],function(){
             $('.banner_page').on('mouseenter','span',function(){
                 let idx = $(this).index();
                 a = idx;
-                $(bans).eq(idx).fadeIn().siblings('li').fadeOut();
+                $(bans).eq(idx).stop().fadeIn().siblings('li').stop().fadeOut();
                 $(page).eq(idx).addClass('active').siblings().removeClass('active');
             });
             $('.ban_float').show();
@@ -83,7 +83,7 @@ require(['config'],function(){
                 }
                 a=idx*1;
                 console.log(idx)
-                $(bans).eq(idx).fadeIn().siblings('li').fadeOut();
+                $(bans).eq(idx).stop().fadeIn().siblings('li').stop().fadeOut();
                 $(page).eq(idx).addClass('active').siblings().removeClass('active');
             });
             $('.banner_next').on('mousedown',function(){
@@ -95,7 +95,7 @@ require(['config'],function(){
                     }
                     a = idx*1;
                     console.log(idx)
-                    $(bans).eq(idx).fadeIn().siblings('li').fadeOut();
+                    $(bans).eq(idx).stop().fadeIn().siblings('li').stop().fadeOut();
                     $(page).eq(idx).addClass('active').siblings().removeClass('active');
 
                 })(idx)
@@ -109,7 +109,46 @@ require(['config'],function(){
             move();
         });
 
-    (function(){
+        //促销活动和最新活动
+        $('.content_right_list_l').addClass('active').on('mouseenter',function(){
+            $('.content_tab_l').show();
+            $('.content_tab_r').hide();
+            $(this).addClass('active').siblings('li').removeClass('active')
+        });
+
+        $('.content_right_list_r').on('mouseenter',function(){
+            $('.content_tab_r').show();
+            $('.content_tab_l').hide();
+            $(this).addClass('active').siblings('li').removeClass('active')
+        });
+
+        //秒杀活动tab切换
+        var $hot_list = $('.hot_list div');
+        var list_t1 = document.querySelector('.hot_ms');
+        var list_t2 = document.querySelector('.hot_zdm');
+
+        var $hot_shop = $('.hot_shop div');
+        console.log(list_t1,list_t2)
+
+        $hot_list.on('mouseover',function(){
+            console.log(this)
+            var idx = $(this).index();
+            if(idx == 0){
+                $(list_t1).removeClass('ms_2').addClass('ms_1');
+                $(list_t2).removeClass('zdm_2').addClass('zdm_1');
+            };
+            if(idx == 1){
+                $(list_t1).removeClass('ms_1').addClass('ms_2');
+                $(list_t2).removeClass('zdm_1').addClass('zdm_2');
+            }
+            $hot_shop.eq(idx).show().siblings('div').hide();
+        })
+             
+
+
+
+
+    ;(function(){
             //楼层banner
         var floorban =document.querySelectorAll('.wide_f1 .wide_f_left .wide_infobanner .infobanner li');
         console.log(floorban)

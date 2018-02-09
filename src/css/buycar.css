@@ -1,5 +1,4 @@
 #main {
-  height: 1000px;
   color: #333333;
   width: 998px;
   margin: 0 auto;
@@ -76,4 +75,163 @@
   color: #fff;
   background-color: #f60;
   margin-right: 10px;
+}
+
+#main .content .cart_produce .buylist li {
+  width: 997px;
+  height: 80px;
+  border-top: 1px solid #ccc;
+  color: #666;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+#main .content .cart_produce .buylist li div {
+  float: left;
+  text-align: left;
+}
+
+#main .content .cart_produce .buylist li .xinxi {
+  width: 420px;
+  margin-left: 20px;
+}
+
+#main .content .cart_produce .buylist li .xinxi img {
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  border: 1px solid #f5f5f5;
+  float: left;
+}
+
+#main .content .cart_produce .buylist li .xinxi .shopname {
+  width: 340px;
+  height: 58px;
+  line-height: 58px;
+  margin-left: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+#main .content .cart_produce .buylist li .xinxi .shopname .shopcolor {
+  margin-left: 10px;
+  color: #ff6600;
+}
+
+#main .content .cart_produce .buylist li .guangdu {
+  width: 100px;
+  height: 38px;
+  line-height: 38px;
+  padding: 1px 10px;
+  cursor: pointer;
+  margin-top: 9px;
+}
+
+#main .content .cart_produce .buylist li .change {
+  margin-left: 25px;
+  width: 100px;
+  text-align: center;
+}
+
+#main .content .cart_produce .buylist li .change .addQty, #main .content .cart_produce .buylist li .change input, #main .content .cart_produce .buylist li .change .reduceQty {
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  margin: 19px 0 0 6px;
+  background-color: #EEE;
+}
+
+#main .content .cart_produce .buylist li .change input {
+  width: 30px;
+  background-color: #FFF;
+  font-size: 12px;
+}
+
+#main .content .cart_produce .buylist li .change .reduceQty {
+  line-height: 0;
+}
+
+#main .content .cart_produce .buylist li .price {
+  width: 110px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#main .content .cart_produce .buylist li .price .pri {
+  margin-top: 20px;
+  width: 80px;
+  height: 20px;
+  border: 1px solid #ffb787;
+  background-color: #fff6ee;
+  color: #f60;
+  position: relative;
+  line-height: 20px;
+  margin: -22px 0 0 14px;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+#main .content .cart_produce .buylist li .totalPrice {
+  width: 110px;
+  line-height: 60px;
+  text-align: center;
+  color: #f60;
+}
+
+#main .content .cart_produce .buylist li .delet {
+  width: 68px;
+  padding: 20px 0 0 20px;
+  cursor: pointer;
+}
+
+#main .car_aggregate {
+  width: 990px;
+  color: #666;
+  margin-top: 40px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#main .car_aggregate .tP {
+  width: 120px;
+}
+
+#main .car_aggregate .hj_name {
+  width: 90px;
+}
+
+#main .car_aggregate .hj_qty span {
+  display: inline-block;
+  color: #f60;
+  font-weight: 100;
+  width: 30px;
+  text-align: center;
+}
+
+#main .aggregate {
+  width: 990px;
+  border-top: 1px solid #ccc;
+  padding: 15px 0 8px 0;
+  margin-top: 15px;
+  line-height: 40px;
+}
+
+#main .aggregate .aggregate_btn {
+  width: 190px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #f60;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
 }

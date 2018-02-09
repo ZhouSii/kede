@@ -81,7 +81,7 @@ gulp.task('server',function(){
 		// 用browserSync代理php服务器
 		// 	* 识别php
 		// 	* 自动刷新
-		proxy:'http://localhost:1804',
+		proxy:'http://localhost:10804',
 
 		// 监听文件修改
 		files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']
