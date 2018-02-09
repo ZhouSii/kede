@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-03 18:26:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-09 15:54:51
+* @Last Modified time: 2018-02-09 16:23:26
 */
 
 require(['config'],function(){
@@ -221,7 +221,6 @@ require(['config'],function(){
         }
         xhr.open('get','../api/data/base.json');
         xhr.send();
-
     })
 
 });

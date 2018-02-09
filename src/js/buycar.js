@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-07 16:14:40
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-09 13:55:50
+* @Last Modified time: 2018-02-09 16:22:45
 */
 require(['config'],function(){
     // 建议：有返回值的写前面
@@ -82,74 +82,74 @@ require(['config'],function(){
 
         //删除和数量按钮
         buylist.onclick = function(e){
-        e= e||window.event;
-        var target = e.target || e.srcElement;
+            e= e||window.event;
+            var target = e.target || e.srcElement;
 
-        if(target.className === 'delet'){
-            var li = target.parentNode;
-            li.parentNode.removeChild(li);
-            
-            var id = li.getAttribute('data-id')
-            console.log(id)
-            var lists = remove();
+            if(target.className === 'delet'){
+                var li = target.parentNode;
+                li.parentNode.removeChild(li);
+                
+                var id = li.getAttribute('data-id')
+                console.log(id)
+                var lists = remove();
 
-            var lists = lists.filter(function(item){
-                return item.id!=id;
-            });
-            console.log(lists)
-          
-            let now = new Date();
-            now.setDate(now.getDate()+-10);
-            document.cookie += 'expires='+now.toUTCString();
-            // let now2 = new Date();
-            // now.setDate(now.getDate()+7);
-            document.cookie = 'lists='+JSON.stringify(lists);
+                var lists = lists.filter(function(item){
+                    return item.id!=id;
+                });
+                console.log(lists)
+              
+                let now = new Date();
+                now.setDate(now.getDate()+-10);
+                document.cookie += 'expires='+now.toUTCString();
+                // let now2 = new Date();
+                // now.setDate(now.getDate()+7);
+                document.cookie = 'lists='+JSON.stringify(lists);
 
-            render(); 
+                render(); 
 
 
 
-        }
-
-        if(target.className === 'addQty'){
-            console.log(target.nextElementSibling)
-            let qty = target.nextElementSibling.value;
-
-            qty++;
-            
-            // target.nextElementSibling.value= qty;
-
-            let li = target.parentNode.parentNode;
-            var idx = $(li).index();
-            console.log(idx)
-            
-            shop[idx].qty = qty;
-
-            shopping();
-
-            
-            // console.log(shop)
-
-        }
-        if(target.className === 'reduceQty'){
-            console.log(666)
-            console.log(target.previousElementSibling)
-            let qty = target.previousElementSibling.value;
-            qty--;
-
-            if(qty <= 0){
-                qty = 0;
             }
-            // target.previousElementSibling.value= qty;
-            let li = target.parentNode.parentNode;
-            var idx = $(li).index();
-            shop[idx].qty = qty;
 
-            shopping();
-        
+            if(target.className === 'addQty'){
+                console.log(target.nextElementSibling)
+                let qty = target.nextElementSibling.value;
+
+                qty++;
+                
+                // target.nextElementSibling.value= qty;
+
+                let li = target.parentNode.parentNode;
+                var idx = $(li).index();
+                console.log(idx)
+                
+                shop[idx].qty = qty;
+
+                shopping();
+
+                
+                // console.log(shop)
+
+            }
+            if(target.className === 'reduceQty'){
+                console.log(666)
+                console.log(target.previousElementSibling)
+                let qty = target.previousElementSibling.value;
+                qty--;
+
+                if(qty <= 0){
+                    qty = 0;
+                }
+                // target.previousElementSibling.value= qty;
+                let li = target.parentNode.parentNode;
+                var idx = $(li).index();
+                shop[idx].qty = qty;
+
+                shopping();
+            
+            }
+
         }
-
-    }
 
 
         //读取cookie
