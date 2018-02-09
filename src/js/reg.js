@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-07 16:14:40
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-08 19:55:24
+* @Last Modified time: 2018-02-09 17:24:53
 */
 require(['config'],function(){
     // 建议：有返回值的写前面
@@ -30,17 +30,22 @@ require(['config'],function(){
                     console.log(data);
                     var validates = document.querySelector('.validates');
                     console.log(validates.value)
-                    // if(validates.value == '' || validates.value*1 !== number.innerHTML*1){
-                    //     $(validates).addClass('error');
-
-                    // }else if($('#userphone').value == ''){
-                    //     $('#userphone').addClass('error');
-
-
-                    // }else if($('#password').value == ''){
-                    //     $('#password').addClass('error');
-
-                    // }
+                    var phone = document.querySelector('#userphone').value;
+                    console.log(phone)
+                    if(!/^1[87543]\d{9}$/.test(phone)){
+                        $('#userphone').addClass('error').focus()
+                        return false;
+                    }
+                    if(validates.value == '' || validates.value*1 != number.innerHTML*1){
+                        $(validates).addClass('error');
+                        return false;
+                    }
+                    var password = document.querySelector('#password').value;
+                    console.log(password)
+                    if(!/^[^\s]{6,20}$/.test(password)){
+                         $('#password').addClass('error').focus();
+                        return false;
+                    }
                     if(data === 'success'){
                         location.href = '../html/login.html';
                     }else if(data === 'fail'){
